@@ -1,1 +1,203 @@
-// JS scripts placed here
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Zebra Forms</title>
+  <meta name="description" content="This site will serve as my form warehouse">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!-- Place your site's HTML here -->
+  <header>
+    <img class="logo" src="./img/zebra-logo.webp" alt="">
+  </header>
+  <main class="zebra-forms-main">
+    <h1>Zebra forms</h1>
+    <p>Bacon ipsum dolor amet t-bone consectetur culpa flank, eu ground round sunt cupim </p>
+    <p> mollit kielbasa tri-tip qui. Nisi commodo spare ribs swine chicken, sunt short loin prosciutto do short ribs bresaola veniam. Ut veniam ham, fugiat tri-tip venison short loin. Beef ribs sirloin tail kielbasa. In esse t-bone consectetur est kielbasa commodo andouille bacon. Shoulder sausage pork chop chicken, picanha ullamco ground round leberkas pariatur lorem.</p>
+
+    <form action="thankyou.html">
+      <div class="container">
+        <h1>Sign Up</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+
+        <label for="email"><b>Email</b></label>
+        <input class="form-input" id="email" type="email" placeholder="Enter Email" name="email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input class="form-input" id="psw" type="password" placeholder="Enter Password" name="psw" required>
+
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+
+        <div class="form-buttons">
+          <button type="button" class="cancelbtn">Cancel</button>
+          <button type="submit" class="signupbtn">Sign Up</button>
+        </div>
+      </div>
+    </form>
+
+    <h2>Survery Form</h2>
+    <form>
+        <!-- Details -->
+        <div class="form-control">
+          <label for="name" id="label-name">
+              Name
+          </label>
+          <!-- Input Type Text -->
+          <input type="text" id="name"
+            placeholder="Enter your name" />
+        </div>
+        <div class="form-control">
+          <label for="email" id="label-email">
+            Email
+          </label>
+
+          <!-- Input Type Email-->
+          <input type="email" id="email"
+            placeholder="Enter your email" />
+        </div>
+
+        <div class="form-control">
+          <label for="age" id="label-age">
+            Age
+          </label>
+
+          <!-- Input Type Text -->
+          <input type="text" id="age"
+            placeholder="Enter your age" />
+        </div>
+
+        <div class="form-control">
+          <label for="role" id="label-role">
+            Which option best describes you?
+          </label>
+
+          <!-- Dropdown options -->
+          <select name="role" id="role">
+            <option value="student">Student</option>
+            <option value="intern">Intern</option>
+            <option value="professional">
+                Professional
+            </option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-control">
+          <label>
+            Would you recommend GeeksforGeeks
+            to a friend?
+          </label>
+
+          <!-- Input Type Radio Button -->
+          <label for="recommed-1">
+              <input type="radio" id="recommed-1"
+                    name="recommed">Yes
+                </input>
+          </label>
+          <label for="recommed-2">
+              <input type="radio" id="recommed-2"
+                    name="recommed">No
+                </input>
+          </label>
+          <label for="recommed-3">
+            <input type="radio" id="recommed-3"
+                  name="recommed">Maybe
+            </input>
+          </label>
+        </div>
+
+        <div class="form-control">
+            <label>Languages and Frameworks known
+                <small>(Check all that apply)</small>
+            </label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox" name="inp">C
+                  </input>
+              </label>
+            <label for="inp-2">
+                <input type="checkbox" name="inp">C++
+                  </input>
+            </label>
+            <label for="inp-3">
+                <input type="checkbox" name="inp">C#
+                  </input>
+            </label>
+            <label for="inp-4">
+                <input type="checkbox" name="inp">Java
+                  </input>
+            </label>
+            <label for="inp-5">
+                <input type="checkbox" name="inp">Python
+                  </input>
+            </label>
+            <label for="inp-6">
+                <input type="checkbox" name="inp">JavaScript
+                  </input>
+            </label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">React
+                  </input>
+            </label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Angular
+                  </input>
+            </label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Django
+                  </input>
+            </label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Spring
+                  </input>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label for="comment">
+                Any comments or suggestions
+            </label>
+
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment"
+                      placeholder="Enter your comment here">
+            </textarea>
+        </div>
+
+        <!-- Multi-line Text Input Control -->
+        <!-- <button id="submit" type="button" value="submit" onclick="handleClick(event)">
+            Submit
+        </button> -->
+        <button id="submit" type="button" value="submit">
+          Submit
+      </button>
+    </form>
+  </main>
+  <div class="zebra-forms-pop-up">
+    <h2>Thank you</h2>
+    <p id="form-name" class="form-name"></p>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
